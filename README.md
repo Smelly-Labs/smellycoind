@@ -1,4 +1,5 @@
 # Smellycoin - a fork of naivecoin
+The Official Smellycoind node source for joining the mainnet chain, only diff from the source is the updated genisis block so all nodes on the chain accpet you when attempting to join the mainnet.
 
 
 
