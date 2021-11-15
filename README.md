@@ -278,11 +278,11 @@ An extra responsibility is to get a number of confirmations for a given transact
 
 ```sh
 # Run a node
-$ node bin/naivecoin.js
+$ node bin/smellycoin.js
 
 # Run two nodes
-$ node bin/smellycoin.js -p 3001 --name 1
-$ node bin/smellycoin.js -p 3002 --name 2 --peers http://localhost:3001
+$ node bin/smellycoin.js -p 3001 -a 0.0.0.0 --name 1
+$ node bin/smellycoin.js -p 3002 -a 0.0.0.0 --name 2 --peers http://localhost:3001
 
 # Access the swagger API
 http://localhost:3001/api-docs/
@@ -465,13 +465,13 @@ $ curl -X GET --header 'Content-Type: application/json' 'http://localhost:3001/b
 # Build the image
 $ docker build . -t smellycoin
 
-# Run naivecoin in a docker
+# Run smellycoin in a docker
 $ ./dockerExec.sh
 
-# Run naivecoin in a docker using port 3002
+# Run smellycoin in a docker using port 3002
 $ ./dockerExec.sh -p 3002
 
-# Run naivecoin in a docker options
+# Run smellycoin in a docker options
 $ ./dockerExec.sh -h
 Usage: ./dockerExec.sh -a HOST -p PORT -l LOG_LEVEL -e PEERS -n NAME
 
