@@ -1,6 +1,6 @@
 {
   "name": "smellycoin",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Smellycoin, a cryptocurrency demonstration",
   "homepage": "https://github.com/smellyslab/smellycoin",
   "license": "Apache-2.0",
@@ -9,10 +9,10 @@
     "url": "https://github.com/smellyslab/smellycoin.git"
   },
   "bin": {
-    "naivecoin": "bin/smellycoin.js"
+    "smellycoin": "bin/smellycoin.js"
   },
   "scripts": {
-    "start": "node bin/smellycoin.js",
+    "start": "node bin/smellycoin.js -a 0.0.0.0",
     "compose:up": "docker-compose up",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc --reporter=lcov --reporter=text --clean node node_modules/mocha/bin/_mocha -u bdd --colors test/",
@@ -33,7 +33,8 @@
     "swagger-ui-express": "^1.0.8",
     "threads": "^0.12.0",
     "timeago.js": "^3.0.2",
-    "yargs": "^10.1.1"
+    "yargs": "^10.1.1",
+    "crypto-extra": "^1.0.1"
   },
   "engines": {
     "node": ">=6"
