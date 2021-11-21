@@ -496,8 +496,8 @@ Options:
   -h, --help       Show help                                           [boolean]
 ```
 
-### Development
-
+### Development 
+// this doesn't work
 ```sh
 # Cloning repository
 $ git clone https://github.com/Smellyslab/smellycoin/
